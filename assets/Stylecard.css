@@ -1,0 +1,87 @@
+#Card {
+  width: 300px;
+  margin: 250px;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: box-shadow 1.5s;
+  position: relative;
+}
+#Card:hover::before {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.37) 3%, rgba(41, 40, 40, 0.774) 98%);
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+#Card:hover {
+  box-shadow: 0 0 20px black;
+}
+.Save button {
+  background-color: red;
+  border-radius: 20px;
+  width: 50px;
+  height: 30px;
+}
+
+.Save {
+  position: absolute;
+  bottom: 450px;
+  left: 220px;
+}
+
+.nav {
+  position: absolute;
+  bottom: 70px;
+  left: 250px;
+  background-color: rgba(163, 168, 172, 0.74);
+  width: 30px;
+  height: 18px;
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 3px;
+}
+.share {
+  position: absolute;
+  bottom: 70px;
+  left: 215px;
+  background-color: rgba(163, 168, 172, 0.74);
+  width: 30px;
+  height: 18px;
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 3px;
+}
+.vai p {
+  position: absolute;
+  bottom: 18px;
+  margin: 50px;
+  background-color: rgba(163, 168, 172, 0.74);
+  border-radius: 20px;
+  text-align: center;
+  width: 100px;
+  height: 18px;
+  padding-top: 3px;
+  font-size: small;
+}
+.vai i {
+  position: absolute;
+  left: 18px;
+  bottom: 68px;
+  background-color: rgba(163, 168, 172, 0.74);
+  width: 30px;
+  height: 18px;
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 3px;
+}
+
+#Card:hover .Save {
+  transform: translateY(350px);
+  transition: 1s;
+}
+#Card:hover .iconeg {
+  transform: translateY(-380px);
+  transition: 1s;
+}
